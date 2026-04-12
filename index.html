@@ -8,19 +8,29 @@
     <meta name="keywords" content="UA, Ukraine, Across Ukraine, Culture of Ukraine">
     <link rel="icon" type="image/png" href="images/ua.png" />
     <link rel="stylesheet" href="styles/style.css" />
+
+    <style>
+        #statue-block {
+            position: relative;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header style="padding: 10px 15px; position: sticky;">
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="UA Logo" width="80"></a>
+                <a href="index.html" class="active"><img src="images/logo.png" alt="UA Logo" width="80"></a>
             </div>
 
             <ul class="nav-links">
                 <li><a href="culture.html">Culture</a></li>
                 <li><a href="across.html">Across UA</a></li>
                 <li><a href="history.html">History</a></li>
-                <li><a href="today.html">Ukraine Today</a></li>
+                <li><a href="#contactModal" class="contact-btn">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -54,12 +64,12 @@
 
         </div>
         <section id="info-block">
-            <img id="bp2" src="images/bp2.png">
-            <img id="wp1" src="images/wp1.png">
-            <img id="wp3" src="images/wp3.png">
-            <img id="wp4" src="images/wp4.png">
-            <img id="bp5" src="images/bp5.png">
-            <img id="wp6" src="images/wp6.png">
+            <img id="bp2" src="images/bp2.png" alt="Ukrainian symbol">
+            <img id="wp1" src="images/wp1.png" alt="Ukrainian symbol">
+            <img id="wp3" src="images/wp3.png" alt="Ukrainian symbol">
+            <img id="wp4" src="images/wp4.png" alt="Ukrainian symbol">
+            <img id="bp5" src="images/bp5.png" alt="Ukrainian symbol">
+            <img id="wp6" src="images/wp6.png" alt="Ukrainian symbol">
 
             <div id="info-text">
                 <p>
@@ -91,14 +101,61 @@
             <li><a href="culture.html">Culture</a></li>
             <li><a href="across.html">Across UA</a></li>
             <li><a href="history.html">History</a></li>
-            <li><a href="today.html">Ukraine Today</a></li>
         </ul>
 
         <p>
             This is a college project completed as part of an assignment.
         </p>
+        <p>&copy; 2026 UA Project. All rights reserved.</p>
+        <p>Reference: <br />
+<a href="https://www.britannica.com/place/Ukraine">https://www.britannica.com/place/Ukraine</a><br />
+<a href="https://unsplash.com">https://unsplash.com (photos)</a><br />
+<a href="https://www.pexels.com">https://www.pexels.com (photos, videos)</a><br />
+<a href="https://www.britannica.com/place/Kyiv">https://www.britannica.com/place/Kyiv</a><br />
+<a href="https://whc.unesco.org/en/list/527/">https://whc.unesco.org/en/list/527/</a><br />
+<a href="https://whc.unesco.org/en/list/865/">https://whc.unesco.org/en/list/865/</a><br />
+<a href="https://www.britannica.com/place/Odessa-Ukraine">https://www.britannica.com/place/Odessa-Ukraine</a><br />
+<a href="https://whc.unesco.org/en/list/1703/">https://whc.unesco.org/en/list/1703/</a><br />
+<a href="https://www.britannica.com/place/Kharkiv-Ukraine">https://www.britannica.com/place/Kharkiv-Ukraine</a><br />
+<a href="https://eurocities.eu/cities/kharkiv/">https://eurocities.eu/cities/kharkiv/</a><br />
+<a href="https://www.britannica.com/place/Dnipropetrovsk-Ukraine">https://www.britannica.com/place/Dnipropetrovsk-Ukraine</a><br />
+<a href="https://www.encyclopediaofukraine.com">https://www.encyclopediaofukraine.com</a></p>
 
-        <<a href="home.html"><img src="images/logo.png" alt="logo"></a>
+
+        <a href="home.html"><img src="images/logo.png" alt="logo"></a>
     </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+
+            <a href="#" class="close-btn">&times;</a>
+
+            <h2>Contact Us</h2>
+
+            <form action="http://foo.com" method="get">
+
+                <label for="first-name">First name: <span class="required">*</span></label>
+                <input type="text" id="first-name" name="firstname" autofocus required><br>
+
+                <label for="last-name">Last name: <span class="required">*</span></label>
+                <input type="text" id="last-name" name="lastname" required><br>
+
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com"><br>
+
+                <label for="message">Message: <span class="required">*</span></label>
+                <textarea cols="40" rows="6" id="message" name="message"></textarea><br>
+
+                <input type="submit" name="submit" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+            </form>
+
+            <p style="margin-left: 138px">
+                <span class="required">*</span> <em>indicates a required field</em>
+            </p>
+
+        </div>
+    </div>
+
 </body>
 </html>
