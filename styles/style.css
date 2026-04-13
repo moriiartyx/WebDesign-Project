@@ -499,19 +499,13 @@ section aside {
 
 
     /*History Page*/
-#historyBG {
-    background-image: url("../images/historybg1.gif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
+
 #history-block {
     position: relative;
     height: 500px;
     padding-top: 100px;
     padding-left: 100px;
-    display: flex;
+    
     
 }
 .timeline{
